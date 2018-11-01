@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>SendIt Dashboard</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" media="screen" href="style.css" />
+    <script src="main.js"></script>
+</head>
+<body>
+    <header>
+        <a href="signup.html" class="header-logo">SentIt</a>
+        <nav> 
+            <ul>
+                <li><a href="dashboard.html">Create Order</a></li>
+                <li><a href="#">Change Destination</a></li>
+                <li><a href="#">View Orders Price</a></li>
+                <li><a href="#">Cancel Orders</a></li>
+
+            </ul>
+            
+        </nav>
+
+    </header>
+    
+    <main>
+            <h2>View Orders made</h2>
+
+            <table>
+              <tr>
+                <th>Order Id</th>
+                <th>Sender</th>
+                <th>Receiver</th>
+                <th>From</th>
+                <th>Destination</th>
+                <th>Status</th>
+                <th>Save</th>
+              </tr>
+              <tr>
+                <td>1</td>
+                <td>Barclay</td>
+                <td>Koin</td>
+                <td>Nakuru</td>
+                <td>Nyeri</td>
+                <td>Delivered</td>
+                <td>
+                    <input id="edit" type="submit" name="edit" value="Edit" />
+                    <input id="Cancel" type="submit" name="edit" value="Cancel" />
+                </td>
+              </tr>
+              <tr>
+                <td>1</td>
+                <td>Barclay</td>
+                <td>Koin</td>
+                <td>Nakuru</td>
+                <td>Nyeri</td>
+                <td>Sent</td>
+                <td>
+                    <input id="edit" type="submit" name="edit" value="Edit" />
+                    <input id="cancel" type="submit" name="cancel" value="Cancel" />
+                </td>
+              </tr>
+            </table>
+
+    </main>
+
+    <footer class="footer">
+        <p>&copy; SendIT Company 2018</p>
+    </footer>
+</body>
+</html>
