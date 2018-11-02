@@ -25,3 +25,14 @@ Send-IT is a courier service that helps users deliver parcels to different desti
 1. The user can only cancel or change the destination of a parcel delivery when the parcel’s status is yet to be marked as delivered.
 2. Only the user who created the parcel delivery order can cancel the order.
 
+# Built With
+
+HTML5
+CSS3
+JavaScript
+
+# Github pages link
+https://bakley.github.io/SendIT/UI/signup.html
+
+# Author:
+Barclay Koin
