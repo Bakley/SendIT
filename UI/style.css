@@ -328,4 +328,8 @@ tr:nth-child(even) {
 /* Add a footer at the bottom of the page */
 .footer{
     text-align: center;
+    position: fixed;
+    bottom: 2px;
+    right: 500px;
+    width: 280px;
 }

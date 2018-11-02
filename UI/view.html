@@ -15,8 +15,8 @@
             <ul>
                 <li><a href="dashboard.html">Create Order</a></li>
                 <li><a href="#">Change Destination</a></li>
-                <li><a href="#">View Orders Price</a></li>
-                <li><a href="#">Cancel Orders</a></li>
+                <li><a href="#">View Delivered Orders</a></li>
+                <li><a href="#">Orders</a></li>
 
             </ul>
             
@@ -25,48 +25,46 @@
     </header>
     
     <main>
-            <h2>View Orders made</h2>
+      <h2>View Orders made</h2>
 
-            <table>
-              <tr>
-                <th>Order Id</th>
-                <th>Sender</th>
-                <th>Receiver</th>
-                <th>From</th>
-                <th>Destination</th>
-                <th>Status</th>
-                <th>Price</th>
-                <th>Save</th>
-              </tr>
-              <tr>
-                <td>1</td>
-                <td>Barclay</td>
-                <td>Koin</td>
-                <td>Nakuru</td>
-                <td>Nyeri</td>
-                <td>Delivered</td>
-                <td>$14</td>
-                <td>
-                    <button class="change-destination" onclick="openFrom()">Edit</button>
-                    <input class="cancel" type="submit" name="edit" value="Cancel" />
-                </td>
-              </tr>
-              <tr>
-                <td>2</td>
-                <td>Koin</td>
-                <td>Barclay</td>
-                <td>Nakuru</td>
-                <td>Nyeri</td>
-                <td>Sent</td>
-                <td>$45</td>
-                <td>
-                    <button class="change-destination" onclick="openForm()">Edit</button>
-                    <input class="edit" type="submit" name="cancel" value="Cancel" />
-                </td>
-              </tr>
-            </table>
-
-            
+      <table>
+        <tr>
+          <th>Order Id</th>
+          <th>Sender</th>
+          <th>Receiver</th>
+          <th>From</th>
+          <th>Destination</th>
+          <th>Status</th>
+          <th>Price</th>
+          <th>Save</th>
+        </tr>
+        <tr>
+          <td>1</td>
+          <td>Barclay</td>
+          <td>Koin</td>
+          <td>Nakuru</td>
+          <td>Nyeri</td>
+          <td>Delivered</td>
+          <td>$14</td>
+          <td>
+              <button class="change-destination" onclick="openFrom()">Edit</button>
+              <input class="edit" type="submit" name="cancel" value="Cancel" />
+          </td>
+        </tr>
+        <tr>
+          <td>2</td>
+          <td>Koin</td>
+          <td>Barclay</td>
+          <td>Nakuru</td>
+          <td>Nyeri</td>
+          <td>Sent</td>
+          <td>$45</td>
+          <td>
+              <button class="change-destination" onclick="openForm()">Edit</button>
+              <input class="edit" type="submit" name="cancel" value="Cancel" />
+          </td>
+        </tr>
+      </table>
 
     </main>
 
@@ -77,7 +75,7 @@
           <label for="email"><b>Order Id</b></label>
           <input type="text" placeholder="Order ID" name="Destination" required>
       
-          <label for="psw"><b>New Destination</b></label>
+          <label for="destination"><b>New Destination</b></label>
           <input type="text" placeholder="Enter Destination" name="destination" required>
       
           <button type="submit" class="btn">Save</button>
@@ -85,18 +83,20 @@
         </form>
       </div>
       
-      <script>
-      function openForm() {
-          document.getElementById("myForm").style.display = "block";
-      }
-      
-      function closeForm() {
-          document.getElementById("myForm").style.display = "none";
-      }
-      </script>
+    <script>
+        function openForm() {
+            document.getElementById("myForm").style.display = "block";
+        }
+        
+        function closeForm() {
+            document.getElementById("myForm").style.display = "none";
+        }
+    </script>
+
 
     <footer class="footer">
         <p>&copy; SendIT Company 2018</p>
     </footer>
+    
 </body>
 </html>
